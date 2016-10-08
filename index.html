@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Leeds Hack 2016 - Hello World</title>
+	</head>
+	<body>
+		<input id="input" placeholder="input"></input>
+		<textarea id="instructions" placeholder="instructions"></textarea>
+		<button id="button">BUTTON</button>
+		<div id="output"></div>
+	</body>
+	<script src="vm/mem.js"></script>
+	<script src="vm/vm.js"></script>
+	<script type="text/javascript">
+		let button = document.getElementById("button");
+		let output = document.getElementById("output");
+		let instructions = document.getElementById("instructions");
+		let input = document.getElementById("input");
+
+		button.addEventListener("click", function(e) {
+			vm.init();
+			let out = vm.execute(
+				instructions.value, 
+				input.value
+			);
+			console.log(out);
+		});
+	</script>
+</html>
