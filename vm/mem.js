@@ -17,6 +17,7 @@ vm.Memory = (function () {
 		return memRecurse(memSize);
 	}
 
+
 	function read(address) {
 		return mem[address];
 	}
