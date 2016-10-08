@@ -5,7 +5,7 @@
 	<body>
 		<input id="input" placeholder="input"></input>
 		<textarea id="instructions" placeholder="instructions"></textarea>
-		<button id="button">BUTTON</button>
+		<button id="button">Execute</button>
 		<div id="output"></div>
 	</body>
 	<script src="vm/mem.js"></script>
@@ -17,12 +17,11 @@
 		let input = document.getElementById("input");
 
 		button.addEventListener("click", function(e) {
-			vm.init();
 			let out = vm.execute(
 				instructions.value, 
 				input.value
 			);
-			console.log(out);
+			output.innerHTML = out;
 		});
 	</script>
 </html>

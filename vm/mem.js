@@ -5,10 +5,16 @@ vm.Memory = (function () {
 
 	function init(memSize) {
 
-		for (let i = memSize - 1; i >= 0; i--) {
-			mem[i] = null;
+		var memRecurse = function(index) {
+			if(index > 0) {
+				mem[--index] = null;
+				return memRecurse(index);
+			} else {
+				return mem;
+			}
 		}
-		return mem;
+
+		return memRecurse(memSize);
 	}
 
 	function read(address) {
