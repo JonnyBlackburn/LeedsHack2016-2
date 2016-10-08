@@ -5,6 +5,7 @@ vm.Memory = (function () {
 
 	function init(memSize) {
 
+
 		var memRecurse = function(index) {
 			if(index > 0) {
 				mem[--index] = null;
