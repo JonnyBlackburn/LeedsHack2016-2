@@ -1,0 +1,53 @@
+* {
+	background: #222;
+	font-family: monospace;
+	font-size: 20px;
+	font-weight: bold;
+	color: #00FF00;
+	box-sizing: border-box;
+}
+body {
+    padding: 1em;
+    margin: 0; 
+}
+
+.grid {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.grid__item {
+	width: 50%;
+	padding: 0 0.5em;
+}
+
+.grid__item--border {
+	border: 2px solid #00AA00;
+}
+
+input,
+textarea,
+#output,
+#execute {
+	background: transparent;
+    border: 2px solid #00AA00;
+    outline: none;
+    padding: 0.5em;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+textarea {
+	height: 300px;
+	resize: none;
+}
+
+#execute{
+	margin-bottom: 0;
+}
+
+#output {
+	border: 0;
+}

@@ -1,12 +1,19 @@
 <html>
 	<head>
 		<title>Leeds Hack 2016 - Hello World</title>
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
-		<input id="input" placeholder="input"></input>
-		<textarea id="instructions" placeholder="instructions"></textarea>
-		<button id="button">Execute</button>
-		<div id="output"></div>
+		<div class='grid'>
+			<div class='grid__item'>
+				<textarea id="instructions" placeholder="instructions"></textarea>
+				<input id="input" placeholder="input"></input>
+				<button id="execute">Execute</button>
+			</div>
+			<div class='grid__item grid__item--border'>
+				<div id="output"></div>
+			</div>
+		</div>
 	</body>
 	<script src="vm/mem.js"></script>
 	<script src="vm/vm.js"></script>
@@ -16,7 +23,7 @@
 		let instructions = document.getElementById("instructions");
 		let input = document.getElementById("input");
 
-		button.addEventListener("click", function(e) {
+		execute.addEventListener("click", function(e) {
 			let out = vm.execute(
 				instructions.value, 
 				input.value
