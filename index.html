@@ -28,7 +28,14 @@
 				instructions.value, 
 				input.value
 			);
-			output.innerHTML = out;
+
+			let final = "";
+
+			for(var i = 0; i < out.length; i++) {
+				final += out[i] + "<br/>";
+			}
+
+			output.innerHTML = final;
 		});
 	</script>
 </html>

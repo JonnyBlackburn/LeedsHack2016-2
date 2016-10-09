@@ -59,8 +59,6 @@ vm.execute = function(instr, inpt) {
 						break;
 				}
 
-
-
 				return executeRecurse(index + 1, accumulator, output);
 			} else {
 				return output;
