@@ -27,7 +27,9 @@ It's possible to get into infinite loops, so be careful.
 Put all positive numbers into the outbox until a negative number is reached.
 
 Input: *3 5 7 12 55 -1*
-Instructions: 
+
+Instructions:
+
 *start:
 IBX
 JMPN exit
