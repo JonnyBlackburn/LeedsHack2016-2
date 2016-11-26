@@ -30,24 +30,26 @@ Input: *3 5 7 12 55 -1*
 
 Instructions:
 
-*start:
-IBX
-JMPN exit
-OBX
-JMP start
-exit:*
+*start:<br>
+IBX<br>
+JMPN exit<br>
+OBX<br>
+JMP start<br>
+exit:*<br>
 
 
 Triples the input number until a negative is input.
 
 Input: *3 6 -1*
+
 Instructions:
-*start:
-IBX
-JMPN exit
-CPYT 1
-ADD 1
-ADD 1
-OBX
-JMP start
-exit:*
+
+*start:<br>
+IBX<br>
+JMPN exit<br>
+CPYT 1<br>
+ADD 1<br>
+ADD 1<br>
+OBX<br>
+JMP start<br>
+exit:*<br>
