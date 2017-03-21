@@ -18,7 +18,7 @@ The instructions are (without square brackets):
 
 There are 10 memory addresses (0 - 9)
 
-Have a play with it [here](https://jonnyblackburn.github.io/LeedsHack2016-2/)
+Have a play with it [here](https://jonnycodes.github.io/LeedsHack2016-2/)
 
 It's possible to get into infinite loops, so be careful.
 
